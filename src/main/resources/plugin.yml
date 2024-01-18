@@ -3,7 +3,7 @@ version: ${project.version}
 author: Luck
 main: me.lucko.extracontexts.ExtraContextsPlugin
 depend: [LuckPerms]
-softdepend: [Geyser-Spigot, AuthmeReloaded, floodgate, WorldGuard, PlaceholderAPI]
+softdepend: [Geyser-Spigot, Authme, floodgate, WorldGuard, PlaceholderAPI]
 api-version: 1.13
 
 commands:
