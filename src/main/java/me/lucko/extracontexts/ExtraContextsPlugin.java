@@ -56,7 +56,7 @@ public class ExtraContextsPlugin extends JavaPlugin implements CommandExecutor {
     }
 
     private void setup() {
-        register("authme-login", "AuthmeReloaded", AuthmeLoginCalculator::new);
+        register("authme-login", "Authme", AuthmeLoginCalculator::new);
         register("geyser-connection", "Geyser-Spigot", GeyserConnectionCalculator::new);
         register("floodgate-player", "floodgate", FloodgatePlayerCalculator::new);
         register("worldguard-region", "WorldGuard", WorldGuardRegionCalculator::new);
