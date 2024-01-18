@@ -6,6 +6,11 @@
 # Contexts are explained in more detail here:
 # https://github.com/lucko/LuckPerms/wiki/Context
 
+authme-login: false
+
+floodgate-player: false
+
+geyser-connection: false
 
 # Provides the 'worldguard:region' and 'worldguard:in-region' contexts.
 # Returns the name of each WorldGuard region the player is currently in.

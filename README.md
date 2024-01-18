@@ -19,6 +19,44 @@ A player's "current contexts" are listed when you run `/lp user <user> info`.
 
 ## Contexts
 ___
+#### `authme:login`
+Returns the login status in Authme
+
+e.g.
+
+> authme:login=unrestricted
+> authme:login=npc
+> authme:login=logon
+> authme:login=registered
+> authme:login=online
+> authme:login=offline-registered
+> authme:login=offline
+> authme:login=unknown
+
+___
+#### `geyser:geyser-connection`
+Returns true or false if the plauer is connected from geyser
+
+e.g.
+
+> geyser:geyser-connection=true
+> authme:login=npc
+> authme:login=logon
+> authme:login=registered
+> authme:login=online
+> authme:login=offline-registered
+> authme:login=offline
+> authme:login=unknown
+
+___
+#### `floodgate:floodgate-player`
+Returns true or false if the plauer is login through floodgate
+
+e.g.
+
+> floodgate:floodgate-player=true
+
+___
 #### `worldguard:region`
 Returns the name of each WorldGuard region the player is currently in
 
