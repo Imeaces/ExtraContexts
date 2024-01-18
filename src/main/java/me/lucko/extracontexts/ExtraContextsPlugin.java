@@ -6,6 +6,9 @@ import me.lucko.extracontexts.calculators.TeamCalculator;
 import me.lucko.extracontexts.calculators.WhitelistedCalculator;
 import me.lucko.extracontexts.calculators.WorldGuardFlagCalculator;
 import me.lucko.extracontexts.calculators.WorldGuardRegionCalculator;
+import me.lucko.extracontexts.calculators.AuthmeLoginCalculator;
+import me.lucko.extracontexts.calculators.GeyserConnectionCalculator;
+import me.lucko.extracontexts.calculators.FloodgatePlayerCalculator;
 
 import net.luckperms.api.LuckPerms;
 import net.luckperms.api.context.ContextCalculator;
@@ -53,6 +56,9 @@ public class ExtraContextsPlugin extends JavaPlugin implements CommandExecutor {
     }
 
     private void setup() {
+        register("authme-login", "AuthmeReloaded", AuthmeLoginCalculator::new);
+        register("geyser-connection", "Geyser-Spigot", GeyserConnectionCalculator::new);
+        register("floodgate-player", "floodgate", FloodgatePlayerCalculator::new);
         register("worldguard-region", "WorldGuard", WorldGuardRegionCalculator::new);
         register("worldguard-flag", "WorldGuard", WorldGuardFlagCalculator::new);
         register("whitelisted", null, WhitelistedCalculator::new);
